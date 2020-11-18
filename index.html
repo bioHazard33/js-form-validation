@@ -1,0 +1,80 @@
+<style>
+	* {
+		font-family: monospace;
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+	}
+
+	input {
+		padding: 10px 20px;
+		margin: 10px;
+	}
+
+	button {
+		cursor: pointer;
+		margin: 10px;
+		border: 0;
+		color: white;
+		background: #7a3af2;
+		border-radius: 5px;
+		padding: 7px;
+		width: 100px;
+	}
+</style>
+<h1>Form Validation</h1>
+
+<form action="#">
+	<label for="first_name">First Name : </label>
+	<input name="first_name" id="first_name" type="text" /><br />
+	<label for="last_name">Last Name : </label>
+	<input name="last_name" id="last_name" type="text" /><br />
+	<label for="phone_no">Phone Number</label>
+	<input name="phone_no" id="phone_no" type="number" />
+	<button id="submit" type="submit" value="submit">Submit</button>
+</form>
+
+<script src="./index.js"></script>
+
+<script>
+	// function checkString(name, val, minLength) {
+  //   if (typeof val !== "string") {
+  //     return `${name} is not of type string \n`;
+  //   }
+
+  //   if (val.length < minLength) {
+  //     return `${name} should be minimum of length ${minLength} \n`;
+  //   }
+  //   return "";
+  // }
+
+  // function checkNumber(name, val) {
+  //   let temp = parseInt(val);
+  //   if (isNaN(temp)) {
+  //     return `${name} is not of type Number \n`;
+  //   }
+
+  //   if (temp < 1e9 || temp >= 1e10) {
+  //     return "Invalid Phone Number \n";
+  //   }
+  //   return "";
+  // }
+
+  // document.getElementById("submit").addEventListener("click", () => {
+  //   let first_name = document.querySelector("#first_name");
+  //   let last_name = document.querySelector("#last_name");
+  //   let phone_no = document.querySelector("#phone_no");
+
+  //   let error = "";
+  //   error += checkString("First Name", first_name.value, 4);
+
+  //   error += checkString("Last Name", last_name.value, 3);
+
+  //   error += checkNumber("Phone Number", phone_no.value);
+  //   if (error.length == 0) alert("Form successfully submitted");
+  //   else alert(error);
+  // });
+
+</script>
